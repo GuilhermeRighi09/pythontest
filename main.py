@@ -15,10 +15,15 @@ def cidade():
     cidade = {
         "cidade": "Piracicaba",
         "ano": "258",
-        "estado": "São Paulo",
+        "estado": "Sao Paulo",
         "Habitantes": 400000
     }
     return cidade
+
+@app.route("/musicas")
+def musica():
+    musicas = ["Cheiro do Mato", "Blusa Vermelha", "Estrada da Vida"]
+    return musicas
 
 if __name__ == "__main__":
     app.run(debug=True)
