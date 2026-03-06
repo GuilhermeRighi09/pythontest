@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -24,6 +24,10 @@ def cidade():
 def musicas():
     musicas = ["Cheiro do Mato", "Blusa Vermelha", "Estrada da Vida"]
     return musicas
+
+@app.route("/cardapio")
+def cardapio():
+    return render_template
 
 if __name__ == "__main__":
     app.run(debug=True)
