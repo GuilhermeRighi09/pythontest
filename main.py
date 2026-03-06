@@ -8,10 +8,22 @@ def index():
 
 @app.route("/curso")
 def curso():
-    return "<h1>Análise de Desenvolvimentos de Sistemas</h1>"
+    return "<h1>Curso Técnico em Análise de Desenvolvimentos de Sistemas</h1>"
+
+@app.route("/cidade")
+def cidade():
+    cidade = {
+        "cidade": "Piracicaba",
+        "ano": "258",
+        "estado": "São Paulo",
+        "Habitantes": 400000
+    }
+    return cidade
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
+
+
 
 
 
