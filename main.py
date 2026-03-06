@@ -21,7 +21,7 @@ def cidade():
     return cidade
 
 @app.route("/musicas")
-def musica():
+def musicas():
     musicas = ["Cheiro do Mato", "Blusa Vermelha", "Estrada da Vida"]
     return musicas
 
