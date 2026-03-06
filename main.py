@@ -27,7 +27,7 @@ def musicas():
 
 @app.route("/cardapio")
 def cardapio():
-    return render_template
+    return render_template("cardapio.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
